@@ -21,12 +21,12 @@ spring:
   thymeleaf:
     cache: false
   datasource:
-    url:  jdbc:postgresql://172.16.0.200:8888/aia_test
+    url:  jdbc:postgresql://172.16.0.200:8888/aia_gp
     username: aia
     password: aia
     driver-class-name : org.postgresql.Driver
 mybatis:
-  type-Aliases-Package: com.learning.userRegister.model
+  type-Aliases-Package: hytera.storm.model
   mapper-locations: classpath*:mapping/*.xml
 logging:
   level:
