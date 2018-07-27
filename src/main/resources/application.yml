@@ -1,0 +1,33 @@
+server:
+    port: 8088
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 1
+    timeout: 5000
+#    cluster:
+#      nodes: 127.0.0.1:6379,192.168.177.128:7002
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 500
+      min-idle: 0
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+  thymeleaf:
+    cache: false
+  datasource:
+    url:  jdbc:postgresql://172.16.0.200:8888/aia_test
+    username: aia
+    password: aia
+    driver-class-name : org.postgresql.Driver
+mybatis:
+  type-Aliases-Package: com.learning.userRegister.model
+  mapper-locations: classpath*:mapping/*.xml
+logging:
+  level:
+    com.learning.userRegister.dao : debug
