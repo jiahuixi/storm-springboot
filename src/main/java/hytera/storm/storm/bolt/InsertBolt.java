@@ -45,19 +45,21 @@ public class InsertBolt extends BaseRichBolt{
 		@SuppressWarnings("rawtypes")
 		@Override
 		public void prepare(Map map, TopologyContext arg1, OutputCollector collector) {
-			//userService= GetSpringBean.getBean(UserService.class);
+			userService= GetSpringBean.getBean(UserService.class);
 		}
 	  
 		   
 		@Override
 		public void execute(Tuple tuple) {
-			//User user =  (User) tuple.getValueByField("str");
-			String a = (String) tuple.getValueByField("str");
+			User user =  (User) tuple.getValueByField("str");
+			//User user = userService.selectByPrimaryKey(1);
+			//String a = (String) tuple.getValueByField("str");
 			try{
-				System.out.println(a);
+				//System.out.println(user.getUserId());
+				System.out.println(user.getUserId());
 
 			}catch(Exception e){
-				logger.error("Bolt的数据处理失败!数据:{}",a,e);
+				logger.error("Bolt的数据处理失败!数据:{}",user.getUserId(),e);
 			}
 		}
 
