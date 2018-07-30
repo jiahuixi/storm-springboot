@@ -24,8 +24,9 @@ public class TestSpout extends BaseRichSpout {
 	public void nextTuple() {
 		try {
 			Thread.sleep(1000);
-			User user = userService.selectByPrimaryKey(1);
-				collector.emit(new Values(user));
+//			User user = userService.selectByPrimaryKey(1);
+//				collector.emit(new Values(user));
+                collector.emit(new Values("123456"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -36,7 +37,7 @@ public class TestSpout extends BaseRichSpout {
 	@Override
 	public void open(Map arg0, TopologyContext arg1, SpoutOutputCollector arg2) {
 		try {
-			userService= GetSpringBean.getBean(UserService.class);
+			//userService= GetSpringBean.getBean(UserService.class);
 			collector = arg2;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
