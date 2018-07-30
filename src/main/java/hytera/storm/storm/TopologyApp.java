@@ -53,7 +53,7 @@ public class TopologyApp {
 			cluster.submitTopology("simple", config, builder.createTopology());
 		}
 
-		// StormSubmitter.submitTopology(args[0], config,
+		// StormSubmitter.submitTopology(args[0], config.properties,
 		// builder.createTopology());
 
 	}

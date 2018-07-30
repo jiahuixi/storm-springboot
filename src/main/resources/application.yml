@@ -30,4 +30,5 @@ mybatis:
   mapper-locations: classpath*:mapping/*.xml
 logging:
   level:
-    com.learning.userRegister.dao : debug
+    hytera.storm.dao: debug
+  logging.config: classpath:logback.xml
