@@ -11,7 +11,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="storm" target="1.8" />
       <module name="storm-springBoot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
