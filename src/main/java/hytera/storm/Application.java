@@ -27,7 +27,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement//事务注解
 @MapperScan("hytera.storm.dao")
 public class Application {
-	/*public static void main(String[] args)
+	public static void main(String[] args)
             throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
 		// 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
@@ -35,9 +35,9 @@ public class Application {
 		springBean.setApplicationContext(context);
 		TopologyApp app = context.getBean(TopologyApp.class);
        app.main(args);
-	}*/
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+	}
+//    public static void main(String[] args) {
+//        SpringApplication.run(Application.class, args);
+//    }
 
 }

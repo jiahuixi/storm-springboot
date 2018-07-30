@@ -15,7 +15,9 @@ import org.apache.storm.generated.InvalidTopologyException;
 import org.apache.storm.topology.TopologyBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TopologyApp {
 	private final static Logger logger = LoggerFactory.getLogger(TopologyApp.class);
 
