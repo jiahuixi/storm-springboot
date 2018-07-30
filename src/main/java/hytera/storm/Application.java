@@ -7,7 +7,10 @@ import org.apache.storm.generated.AuthorizationException;
 import org.apache.storm.generated.InvalidTopologyException;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -24,13 +27,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement//事务注解
 @MapperScan("hytera.storm.dao")
 public class Application {
-	public static void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
+	/*public static void main(String[] args)
+            throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
 		// 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		GetSpringBean springBean=new GetSpringBean();
 		springBean.setApplicationContext(context);
 		TopologyApp app = context.getBean(TopologyApp.class);
        app.main(args);
-	}
-	
+	}*/
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }

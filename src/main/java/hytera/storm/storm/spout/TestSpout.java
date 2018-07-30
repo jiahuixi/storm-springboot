@@ -23,8 +23,9 @@ public class TestSpout extends BaseRichSpout {
 	@Override
 	public void nextTuple() {
 		try {
-				//User user = userService.selectByPrimaryKey(1);
-				collector.emit(new Values("sss"));
+			Thread.sleep(1000);
+			User user = userService.selectByPrimaryKey(1);
+				collector.emit(new Values(user));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

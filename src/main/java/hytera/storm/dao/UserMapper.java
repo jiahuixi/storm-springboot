@@ -4,7 +4,7 @@ package hytera.storm.dao;
 import hytera.storm.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
-//@Mapper
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 

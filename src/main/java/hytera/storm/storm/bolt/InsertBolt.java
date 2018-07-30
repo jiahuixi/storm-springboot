@@ -51,13 +51,12 @@ public class InsertBolt extends BaseRichBolt{
 		   
 		@Override
 		public void execute(Tuple tuple) {
-			//User user =  (User) tuple.getValueByField("str");
-			String ss= (String)tuple.getValueByField("str");
+			User user =  (User) tuple.getValueByField("str");
 			try{
-				System.out.println(ss);
+				System.out.println(user.getUserId());
 
 			}catch(Exception e){
-				logger.error("Bolt的数据处理失败!数据:{}",ss,e);
+				logger.error("Bolt的数据处理失败!数据:{}",user.getUserId(),e);
 			}
 		}
 
