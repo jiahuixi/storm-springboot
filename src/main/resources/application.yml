@@ -24,7 +24,8 @@ spring:
     url:  jdbc:postgresql://172.16.0.200:8888/aia_gp
     username: aia
     password: aia
-    driver-class-name : org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   type-Aliases-Package: hytera.storm.model
   mapper-locations: classpath*:mapping/*.xml

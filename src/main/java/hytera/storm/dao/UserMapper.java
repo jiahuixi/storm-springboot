@@ -2,12 +2,9 @@ package hytera.storm.dao;
 
 
 import hytera.storm.model.User;
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.annotations.Mapper;
 
 //@Mapper
-
-
-@Component
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 
