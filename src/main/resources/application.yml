@@ -32,3 +32,4 @@ mybatis:
 logging:
   level:
     com.learning.userRegister.dao : debug
+  config: classpath:logback.xml

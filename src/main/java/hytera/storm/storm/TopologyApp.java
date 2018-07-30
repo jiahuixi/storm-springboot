@@ -41,7 +41,7 @@ public class TopologyApp {
 		 * 导致对象在bolt和bolt节点传输时并没有走序列化方式，结果测试一切正常， 但是上生产后，因为work数量是10个，
 		 * 立马在后一个bolt中报大量的空指针异常， 造成很严重的生产问题。
 		 */
-		config.setNumWorkers(5);
+		config.setNumWorkers(1);
 		if (args != null && args.length > 0) {
 			// 远程模式
 			StormSubmitter.submitTopology(args[0], config, builder.createTopology());
