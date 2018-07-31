@@ -11,9 +11,9 @@ import java.util.ResourceBundle;
 
 public class ActivemqReceiver {
     public static void main(String[] args) {
-        String activeMqUrl= ResourceBundle.getBundle("config.properties").getString("jms.url");
-        String activeMqUsername = ResourceBundle.getBundle("config.properties").getString("jms.username");
-        String activeMqPassword = ResourceBundle.getBundle("config.properties").getString("jms.password");
+        String activeMqUrl= ResourceBundle.getBundle("config").getString("jms.url");
+        String activeMqUsername = ResourceBundle.getBundle("config").getString("jms.username");
+        String activeMqPassword = ResourceBundle.getBundle("config").getString("jms.password");
         String url= activeMqUrl+"?wireFormat.maxInactivityDuration=0";
         int i = 0;
         // ConnectionFactory ：连接工厂，JMS 用它创建连接
