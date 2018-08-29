@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 public class TopologyApp {
 	private final static Logger logger = LoggerFactory.getLogger(TopologyApp.class);
 
-	public   void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
+	public static  void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("getCaseSpout", new TestSpout(), 1);
 		builder.setBolt(" getCountBolt", new InsertBolt(), 1).shuffleGrouping("getCaseSpout");
