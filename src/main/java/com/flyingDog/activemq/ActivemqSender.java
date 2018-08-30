@@ -1,4 +1,4 @@
-package hytera.storm.activemq;
+package com.flyingDog.activemq;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;

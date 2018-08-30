@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/flyingDog.iml" filepath="$PROJECT_DIR$/flyingDog.iml" />
       <module fileurl="file://$PROJECT_DIR$/storm-springBoot.iml" filepath="$PROJECT_DIR$/storm-springBoot.iml" />
     </modules>
   </component>

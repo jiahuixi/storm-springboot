@@ -1,4 +1,4 @@
-package hytera.storm.model;
+package com.flyingDog.model;
 
 public class User {
     private Integer userId;

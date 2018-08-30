@@ -1,4 +1,4 @@
-package hytera.storm.util;
+package com.flyingDog.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

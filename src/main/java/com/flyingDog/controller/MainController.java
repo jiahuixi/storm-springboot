@@ -1,7 +1,7 @@
-package hytera.storm.controller;
+package com.flyingDog.controller;
 
-import hytera.storm.model.User;
-import hytera.storm.service.UserService;
+import com.flyingDog.model.User;
+import com.flyingDog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

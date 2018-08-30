@@ -1,7 +1,7 @@
-package hytera.storm.service;
+package com.flyingDog.service;
 
 
-import hytera.storm.model.User;
+import com.flyingDog.model.User;
 
 public interface UserService {
     int deleteByPrimaryKey(Integer userId);

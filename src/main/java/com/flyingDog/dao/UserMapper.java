@@ -1,7 +1,7 @@
-package hytera.storm.dao;
+package com.flyingDog.dao;
 
 
-import hytera.storm.model.User;
+import com.flyingDog.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

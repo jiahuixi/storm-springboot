@@ -1,12 +1,11 @@
-package hytera.storm.storm.spout;
+package com.flyingDog.storm.spout;
 
 import java.util.List;
 import java.util.Map;
 
-import hytera.storm.model.User;
-import hytera.storm.service.UserService;
-import hytera.storm.util.GetSpringBean;
-import org.apache.storm.shade.org.json.simple.JSONArray;
+import com.flyingDog.model.User;
+import com.flyingDog.util.GetSpringBean;
+import com.flyingDog.service.UserService;
 import org.apache.storm.spout.SpoutOutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.OutputFieldsDeclarer;

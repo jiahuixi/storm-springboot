@@ -1,11 +1,11 @@
-package hytera.storm.storm;
+package com.flyingDog.storm;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 
-import hytera.storm.model.User;
-import hytera.storm.storm.bolt.InsertBolt;
-import hytera.storm.storm.spout.TestSpout;
+import com.flyingDog.model.User;
+import com.flyingDog.storm.bolt.InsertBolt;
+import com.flyingDog.storm.spout.TestSpout;
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
 import org.apache.storm.StormSubmitter;

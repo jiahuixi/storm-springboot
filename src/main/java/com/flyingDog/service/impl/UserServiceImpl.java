@@ -1,8 +1,8 @@
-package hytera.storm.service.impl;
+package com.flyingDog.service.impl;
 
-import hytera.storm.dao.UserMapper;
-import hytera.storm.model.User;
-import hytera.storm.service.UserService;
+import com.flyingDog.dao.UserMapper;
+import com.flyingDog.model.User;
+import com.flyingDog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

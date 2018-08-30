@@ -1,13 +1,11 @@
 /**
  * 
  */
-package hytera.storm.storm.bolt;
+package com.flyingDog.storm.bolt;
 
-import hytera.storm.model.User;
-import hytera.storm.service.UserService;
-import hytera.storm.util.GetSpringBean;
-import org.apache.storm.Constants;
-import org.apache.storm.shade.org.eclipse.jetty.util.ajax.JSON;
+import com.flyingDog.model.User;
+import com.flyingDog.service.UserService;
+import com.flyingDog.util.GetSpringBean;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.OutputFieldsDeclarer;
@@ -17,7 +15,6 @@ import org.apache.storm.tuple.Tuple;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Iterator;
 import java.util.Map;
 
 /**

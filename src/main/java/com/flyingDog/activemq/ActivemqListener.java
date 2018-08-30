@@ -1,4 +1,4 @@
-package hytera.storm.activemq;
+package com.flyingDog.activemq;
 
 
 import javax.jms.JMSException;
