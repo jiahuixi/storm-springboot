@@ -26,12 +26,15 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class Application {
 	public static void main(String[] args)
             throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
-		// 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
-		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-		GetSpringBean springBean=new GetSpringBean();
-		springBean.setApplicationContext(context);
-		TopologyApp app = context.getBean(TopologyApp.class);
-       app.main(args);
+		SpringApplication.run(Application.class, args);
+
+
+//		// 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
+//		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+//		GetSpringBean springBean=new GetSpringBean();
+//		springBean.setApplicationContext(context);
+//		TopologyApp app = context.getBean(TopologyApp.class);
+//       app.main(args);
 	}
 //    public static void main(String[] args) {
 //        SpringApplication.run(Application.class, args);
